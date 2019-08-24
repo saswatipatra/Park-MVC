@@ -1,0 +1,15 @@
+@model parks_mvc.Models.State
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Are you sure you want to delete this State?</h2>
+<h4><i>@Html.DisplayFor(model => model.StateName)</i></h4>
+<hr>
+@using (Html.BeginForm())
+{
+    <input type="submit" class="btn btn-danger" value="Yes, Delete" />
+}
+<br>
+@Html.ActionLink("Cancel", "Details", new { id = Model.StateId })

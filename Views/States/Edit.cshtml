@@ -1,0 +1,25 @@
+@model parks_mvc.Models.State
+@{
+    Layout = "_Layout";
+}
+
+<h1>Update your State</h1>
+<hr>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label for="StateName">Name</label>
+        <input name="StateName" type="text" class="form-control" value="@Model.StateName" required>
+    </div>
+    <div class="form-group">
+        <label for="Country">Country</label>
+        <input name="Country" type="text" class="form-control" value="@Model.Country" required>
+    </div>
+    <div class="form-group">
+        <label for="City">City</label>
+        <input name="City" type="text" class="form-control" value="@Model.City" required>
+    </div>
+
+    <input type="submit" value="Save Changes" class="btn btn-primary"/><br><br>
+    @Html.ActionLink("Cancel", "Index")
+}

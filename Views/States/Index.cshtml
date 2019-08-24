@@ -1,0 +1,20 @@
+@{
+    Layout = "_Layout";
+}
+
+@model IEnumerable<parks_mvc.Models.State>
+
+<h2>All States</h2>
+<hr />
+
+@foreach (var state in Model)
+{
+    <ul>
+        <li>Name: @Html.ActionLink($"{state.StateName}", "Details", new { id = state.StateId})</li>
+        <li>Average Rating: @Html.DisplayFor(modelItem => state.AvgRating)</li>
+    </ul>
+}
+
+@Html.ActionLink("< Previous", "IndexPrev") | @Html.ActionLink("Next >", "IndexNext")
+<hr>
+@Html.ActionLink("New State", "Create")
