@@ -17,6 +17,7 @@ namespace parks_mvc.Models
       
 
         public ICollection<NationalPark> NationalParks { get; set; }
+        public ICollection<Review> Reviews { get; set; }
 
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
         {

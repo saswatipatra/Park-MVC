@@ -1,0 +1,26 @@
+@{
+    Layout = "_Layout";
+}
+
+@model parks_mvc.Models.NationalPark
+
+<h2>NationalPark - @Model.ParkName</h2>
+<hr>
+<ul>
+    <li>Name: @Html.DisplayFor(modelItem => Model.ParkName)</li>
+    <li>Average Rating: @Model.AvgRating)</li>
+    
+</ul>
+<hr>
+<h5>Reviews for @Model.ParkName</h5>
+@foreach (var review in Model.Reviews)
+{
+    <ul>
+        <li>Author: @review.UserName</li>
+        <li>Rating: @review.Rating</li>
+        <li>Review: @review.ReviewText</li>
+        
+    </ul>
+}
+@Html.ActionLink("Add a Review", "Create", "Review", new { id = Model.NationalParkId })
+@Html.ActionLink("Back", "Index")

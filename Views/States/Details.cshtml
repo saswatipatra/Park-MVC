@@ -13,19 +13,15 @@
     <li>Name: @Html.DisplayFor(modelItem => Model.StateName)</li>
     <li>Country: @Html.DisplayFor(modelItem => Model.Country)</li>
     <li>City: @Html.DisplayFor(modelItem => Model.City)</li>
-    <li>Average Rating: @Html.DisplayFor(modelItem => Model.AvgRating)</li>
 </ul>
 <hr>
 <h5>NationalParks for @Model.StateName</h5>
 @foreach (var nationalPark in Model.NationalParks)
 {
     <ul>
-        <li>Author: @nationalPark.UserName</li>
-        <li>Rating: @nationalPark.Rating</li>
-        <li>NationalPark: @nationalPark.NationalParkText</li>
+        <li>Park Name: @nationalPark.ParkName</li>
+        <li>Average Rating: @nationalPark.AvgRating)</li>
     </ul>
 }
-
-@Html.ActionLink("Add a NationalPark", "Create", "NationalParks", new { id = Model.StateId })
-<hr>
+@Html.ActionLink("Add a NationalPark", "Create", "NationalPark", new { id = Model.StateId })
 @Html.ActionLink("Back", "Index")

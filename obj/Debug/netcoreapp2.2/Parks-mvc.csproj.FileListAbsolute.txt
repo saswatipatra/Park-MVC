@@ -28,3 +28,11 @@ C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Parks-mvc.Views.pdb
 C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Parks-mvc.dll
 C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Parks-mvc.pdb
 C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Parks-mvc.csproj.CopyComplete
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\NationalParks\Create.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\States\Create.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\States\Delete.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\States\Details.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\States\Edit.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\States\Index.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\Review\Create.g.cshtml.cs
+C:\Users\p403s\Desktop\Parks-mvc\obj\Debug\netcoreapp2.2\Razor\Views\NationalParks\Details.g.cshtml.cs
