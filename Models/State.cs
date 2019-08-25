@@ -14,7 +14,7 @@ namespace parks_mvc.Models
         public string StateName { get; set; }
         public string Country { get; set; }
         public string City { get; set; }
-        public double AvgRating { get; set; }
+      
 
         public ICollection<NationalPark> NationalParks { get; set; }
 

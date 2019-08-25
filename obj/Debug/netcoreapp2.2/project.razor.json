@@ -3016,6 +3016,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\NationalParks\\Create.cshtml",
+      "TargetPath": "Views\\NationalParks\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\States\\Edit.cshtml",
       "TargetPath": "Views\\States\\Edit.cshtml",
       "FileKind": "mvc"

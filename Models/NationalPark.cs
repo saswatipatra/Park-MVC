@@ -10,10 +10,9 @@ namespace parks_mvc.Models
     {
         public int NationalParkId {get; set;}
         public int StateId { get; set; }
-        public string UserName { get; set; }
-        public int Rating { get; set; }
-        public string NationalParkText { get; set; }
-
+        public string ParkName { get; set; }
+         public double AvgRating { get; set; }
+        
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
         {
             var tcs = new TaskCompletionSource<IRestResponse>();
