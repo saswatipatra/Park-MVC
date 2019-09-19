@@ -6,8 +6,7 @@
 <hr>
 @using (Html.BeginForm())
 {
-    <input name="StateId" type="hidden" value="@ViewBag.StateId">
-    <input name="NationalParkId" type="hidden" value="@ViewBag.NationalParkId">
+   <input name="NationalParkId" type="hidden" value="@ViewBag.NationalParkId">
     
     <div class="form-group">
         <label for="UserName">Your Name</label>
@@ -25,4 +24,4 @@
     <input type="submit" value="Add Review" class="btn btn-primary"/><br><br>
 }
 
-@Html.ActionLink("Cancel", "Details", "States", new { id = @ViewBag.StateId })
+@Html.ActionLink("Cancel", "Details", "NationalParks", new { id = @ViewBag.NationalParkId })

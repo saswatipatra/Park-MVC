@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using RestSharp;
@@ -17,8 +16,7 @@ namespace parks_mvc.Models
       
 
         public ICollection<NationalPark> NationalParks { get; set; }
-        public ICollection<Review> Reviews { get; set; }
-
+      
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
         {
             var tcs = new TaskCompletionSource<IRestResponse>();
@@ -135,9 +133,6 @@ namespace parks_mvc.Models
             {
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-        }
-
-
-        
+        }  
     }
 }

@@ -6,6 +6,9 @@
 
 <h2>NationalPark - @Model.ParkName</h2>
 <hr>
+@Html.ActionLink("Edit NationalPark", "Edit", new { id = Model.NationalParkId })<br>
+@Html.ActionLink("Delete NationalPark", "Delete", new { id = Model.NationalParkId })
+<hr>
 <ul>
     <li>Name: @Html.DisplayFor(modelItem => Model.ParkName)</li>
     <li>Average Rating: @Model.AvgRating)</li>
@@ -23,4 +26,5 @@
     </ul>
 }
 @Html.ActionLink("Add a Review", "Create", "Review", new { id = Model.NationalParkId })
-@Html.ActionLink("Back", "Index")
+<hr>
+@Html.ActionLink("Back", "Index","States")

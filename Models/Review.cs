@@ -9,7 +9,6 @@ namespace parks_mvc.Models
     public class Review
     {
         public int ReviewId {get; set;}
-         public int StateId { get; set; }
         public int NationalParkId { get; set; }
         public string UserName { get; set; }
         public int Rating { get; set; }

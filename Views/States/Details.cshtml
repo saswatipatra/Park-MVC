@@ -19,9 +19,9 @@
 @foreach (var nationalPark in Model.NationalParks)
 {
     <ul>
-        <li>Park Name: @nationalPark.ParkName</li>
-        <li>Average Rating: @nationalPark.AvgRating)</li>
+        <li>Name: @Html.ActionLink($"{nationalPark.ParkName}", "Details", "NationalParks", new { id = nationalPark.NationalParkId})</li>
+        <li>Average Rating: @nationalPark.AvgRating</li>
     </ul>
 }
-@Html.ActionLink("Add a NationalPark", "Create", "NationalPark", new { id = Model.StateId })
+@Html.ActionLink("Add a NationalPark", "Create", "NationalParks", new { id = Model.StateId })<br>
 @Html.ActionLink("Back", "Index")

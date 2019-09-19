@@ -1,0 +1,17 @@
+@model parks_mvc.Models.NationalPark
+@{
+    Layout = "_Layout";
+}
+
+<h1>Update your Park</h1>
+<hr>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label for="ParkName">ParkName</label>
+        <input name="ParkName" type="text" class="form-control" value="@Model.ParkName" required>
+    </div>
+    
+    <input type="submit" value="Save Changes" class="btn btn-primary"/><br><br>
+   @Html.ActionLink("Cancel", "Details", new { id = Model.NationalParkId })
+}

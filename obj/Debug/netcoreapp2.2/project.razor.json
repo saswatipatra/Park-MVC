@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\p403s\\Desktop\\Parks-mvc\\Parks-mvc.csproj",
+  "FilePath": "/Users/Guest/Desktop/Park-MVC/Parks-mvc.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,83 +2961,93 @@
   "RootNamespace": "Parks_mvc",
   "Documents": [
     {
-      "FilePath": "Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "Views/Review/Create.cshtml",
+      "TargetPath": "Views/Review/Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\States\\Details.cshtml",
-      "TargetPath": "Views\\States\\Details.cshtml",
+      "FilePath": "Views/States/Index.cshtml",
+      "TargetPath": "Views/States/Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "Views/NationalParks/Edit.cshtml",
+      "TargetPath": "Views/NationalParks/Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "Views/Home/Privacy.cshtml",
+      "TargetPath": "Views/Home/Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\NationalParks\\Details.cshtml",
-      "TargetPath": "Views\\NationalParks\\Details.cshtml",
+      "FilePath": "Views/States/Delete.cshtml",
+      "TargetPath": "Views/States/Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "Views/States/Details.cshtml",
+      "TargetPath": "Views/States/Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\States\\Index.cshtml",
-      "TargetPath": "Views\\States\\Index.cshtml",
+      "FilePath": "Views/NationalParks/Create.cshtml",
+      "TargetPath": "Views/NationalParks/Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "Views/States/Edit.cshtml",
+      "TargetPath": "Views/States/Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Review\\Create.cshtml",
-      "TargetPath": "Views\\Review\\Create.cshtml",
+      "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\States\\Create.cshtml",
-      "TargetPath": "Views\\States\\Create.cshtml",
+      "FilePath": "Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\States\\Delete.cshtml",
-      "TargetPath": "Views\\States\\Delete.cshtml",
+      "FilePath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "Views/NationalParks/Details.cshtml",
+      "TargetPath": "Views/NationalParks/Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "Views/Shared/Error.cshtml",
+      "TargetPath": "Views/Shared/Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\NationalParks\\Create.cshtml",
-      "TargetPath": "Views\\NationalParks\\Create.cshtml",
+      "FilePath": "Views/_ViewImports.cshtml",
+      "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\States\\Edit.cshtml",
-      "TargetPath": "Views\\States\\Edit.cshtml",
+      "FilePath": "Views/_ViewStart.cshtml",
+      "TargetPath": "Views/_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/NationalParks/Delete.cshtml",
+      "TargetPath": "Views/NationalParks/Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/States/Create.cshtml",
+      "TargetPath": "Views/States/Create.cshtml",
       "FileKind": "mvc"
     }
   ],

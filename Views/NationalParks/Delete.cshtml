@@ -1,0 +1,15 @@
+@model parks_mvc.Models.NationalPark
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Are you sure you want to delete this Park?</h2>
+<h4><i>@Html.DisplayFor(model => model.ParkName)</i></h4>
+<hr>
+@using (Html.BeginForm())
+{
+    <input type="submit" class="btn btn-danger" value="Yes, Delete" />
+}
+<br>
+@Html.ActionLink("Cancel", "Details", new { id = Model.NationalParkId })

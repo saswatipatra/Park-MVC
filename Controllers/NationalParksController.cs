@@ -5,6 +5,17 @@ namespace parks_mvc.Controllers
 {
     public class NationalParksController : Controller
     {
+        public IActionResult Index()
+        {
+            var allNationalParks = NationalPark.GetNationalParks();
+            return View(allNationalParks);
+        }
+
+        public IActionResult Details(int id)
+        {
+            var particularNationalPark = NationalPark.GetPaticularNationalPark(id);
+            return View(particularNationalPark);
+        }
         public ActionResult Create(int id)
         {
             ViewBag.StateId = id;
@@ -16,6 +27,25 @@ namespace parks_mvc.Controllers
         {
             NationalPark.PostNationalPark(nationalPark);
             return RedirectToAction("Details", "States", new { id = nationalPark.StateId });
+        }
+        public IActionResult Delete(int id)
+        {
+            NationalPark.DeleteNationalPark(id);
+            return RedirectToAction("Index");
+        }
+
+        
+        public IActionResult Edit(int id)
+        {
+            var particularNationalPark = NationalPark.GetPaticularNationalPark(id);
+            return View(particularNationalPark);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id, NationalPark nationalPark)
+        {
+            NationalPark.EditNationalPark(id,nationalPark);
+            return RedirectToAction("Index");
         }
     }
 }
