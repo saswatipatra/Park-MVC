@@ -31,12 +31,13 @@ namespace parks_mvc.Controllers
         public IActionResult Delete(int id)
         {
             NationalPark.DeleteNationalPark(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","states");
         }
 
         
         public IActionResult Edit(int id)
         {
+            
             var particularNationalPark = NationalPark.GetPaticularNationalPark(id);
             return View(particularNationalPark);
         }
@@ -45,7 +46,7 @@ namespace parks_mvc.Controllers
         public IActionResult Edit(int id, NationalPark nationalPark)
         {
             NationalPark.EditNationalPark(id,nationalPark);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","states");
         }
     }
 }

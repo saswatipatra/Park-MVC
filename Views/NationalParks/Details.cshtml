@@ -11,7 +11,7 @@
 <hr>
 <ul>
     <li>Name: @Html.DisplayFor(modelItem => Model.ParkName)</li>
-    <li>Average Rating: @Model.AvgRating)</li>
+    <li>Average Rating: @Model.AvgRating</li>
     
 </ul>
 <hr>
@@ -25,6 +25,7 @@
         
     </ul>
 }
-@Html.ActionLink("Add a Review", "Create", "Review", new { id = Model.NationalParkId })
+
+@Html.ActionLink("Add a Review", "Create", "Reviews", new { id = Model.NationalParkId })
 <hr>
 @Html.ActionLink("Back", "Index","States")

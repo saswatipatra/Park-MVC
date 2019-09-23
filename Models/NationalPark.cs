@@ -58,7 +58,7 @@ namespace parks_mvc.Models
         // Display Particular National Park
         public static NationalPark GetPaticularNationalPark(int id)
         {
-            var client= new RestClient("http://locathost:5000/api");
+            var client= new RestClient("http://localhost:5000/api");
             var request = new RestRequest("nationalParks/" +id, Method.GET);
             var response = new RestResponse();
             Task.Run(async () =>
@@ -87,7 +87,7 @@ namespace parks_mvc.Models
         public static void EditNationalPark(int id, NationalPark nationalPark)
         {
             var client = new RestClient("http://localhost:5000/api/");
-            var request = new RestRequest("nationalParks/"+id, Method.PUT);
+            var request = new RestRequest("nationalParks/"+id , Method.PUT);
             request.AddJsonBody(nationalPark);
             var response = new RestResponse();
 
