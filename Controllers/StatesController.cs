@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using parks_mvc.Models;
 
@@ -51,6 +52,7 @@ namespace parks_mvc.Controllers
         public IActionResult Edit(int id)
         {
             var particularState = State.GetPaticularStates(id);
+            Console.WriteLine("inside state part1 edit");
             return View(particularState);
         }
 
@@ -58,6 +60,7 @@ namespace parks_mvc.Controllers
         public IActionResult Edit(int id, State state)
         {
             State.EditState(id,state);
+            Console.WriteLine("inside state edit");
             return RedirectToAction("Index");
         }
     }

@@ -7,7 +7,7 @@
 <hr>
 @using (Html.BeginForm())
 {
-    
+     <input name="StateId" type="hidden" value="@Model.StateId">
     <div class="form-group">
         <label for="ParkName">ParkName</label>
         <input name="ParkName" type="text" class="form-control" value="@Model.ParkName" required>

@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using parks_mvc.Models;
 
@@ -39,6 +40,7 @@ namespace parks_mvc.Controllers
         {
             
             var particularNationalPark = NationalPark.GetPaticularNationalPark(id);
+            Console.WriteLine("inside edit part 1");
             return View(particularNationalPark);
         }
 
@@ -46,6 +48,7 @@ namespace parks_mvc.Controllers
         public IActionResult Edit(int id, NationalPark nationalPark)
         {
             NationalPark.EditNationalPark(id,nationalPark);
+            Console.WriteLine("inside edit");
             return RedirectToAction("Index","states");
         }
     }
